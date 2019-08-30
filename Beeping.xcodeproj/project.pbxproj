@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E91D49C2318CB96006B73D3 /* FastFourierTransformGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E91D49B2318CB96006B73D3 /* FastFourierTransformGraph.swift */; };
+		9E91D49E2318CBA9006B73D3 /* TheGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E91D49D2318CBA9006B73D3 /* TheGrid.swift */; };
 		9E9FBF7E2314488600029750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9FBF7D2314488600029750 /* Assets.xcassets */; };
 		9ED252D822BD45BC00C1C941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED252D722BD45BC00C1C941 /* AppDelegate.swift */; };
 		9ED252DA22BD45BC00C1C941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED252D922BD45BC00C1C941 /* ViewController.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E91D49B2318CB96006B73D3 /* FastFourierTransformGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastFourierTransformGraph.swift; sourceTree = "<group>"; };
+		9E91D49D2318CBA9006B73D3 /* TheGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheGrid.swift; sourceTree = "<group>"; };
 		9E9FBF7D2314488600029750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ED252D422BD45BC00C1C941 /* Beeping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beeping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED252D722BD45BC00C1C941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				9ED252DB22BD45BC00C1C941 /* Main.storyboard */,
 				9ED252E022BD45BD00C1C941 /* LaunchScreen.storyboard */,
 				9ED252E322BD45BD00C1C941 /* Info.plist */,
+				9E91D49B2318CB96006B73D3 /* FastFourierTransformGraph.swift */,
+				9E91D49D2318CBA9006B73D3 /* TheGrid.swift */,
 			);
 			path = Beeping;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E91D49C2318CB96006B73D3 /* FastFourierTransformGraph.swift in Sources */,
 				9ED252DA22BD45BC00C1C941 /* ViewController.swift in Sources */,
 				9ED252D822BD45BC00C1C941 /* AppDelegate.swift in Sources */,
+				9E91D49E2318CBA9006B73D3 /* TheGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
