@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 
-from icons import generate_icons
+from icons import generate_icons, generate_pdf
 
 
 def project_root() -> Path:
@@ -14,6 +14,7 @@ def assets_root() -> Path:
 
 def main():
     generate_icons(project_root().joinpath('icon.svg'), assets_root().joinpath('AppIcon.appiconset'))
+    generate_pdf(project_root().joinpath('icon.svg'), assets_root().joinpath('AppIconVector.imageset'))
 
 
 if __name__ == "__main__":

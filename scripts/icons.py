@@ -34,6 +34,9 @@ class ExportImage(object):
         run([self.__inkscape(), '-f', str(self.__source_file), '--export-width=' + str(self.__side_length),
              '--export-height=' + str(self.__side_length), '--export-png=' + self.__image_path()], check=True)
 
+    def generate_vector(self) -> None:
+        run([self.__inkscape(), '-f', str(self.__source_file), '--export-pdf=' + str(self.__directory.joinpath('icon.pdf'))], check=True)
+
     def move(self) -> None:
         full_image_path = self.__image_path()
         paths = list(self.__paths())
@@ -64,5 +67,10 @@ def generate_icons(source_file: Path, destination: Path):
         export_image.move()
 
 
+def generate_pdf(source_file: Path, destination: Path):
+    pdf_image = ExportImage(1024, [1,], source_file, destination)
+    pdf_image.generate_vector()
+
 if __name__ == "__main__":
     generate_icons(Path.cwd().joinpath('icon.svg'), Path.cwd())
+    generate_pdf(Path.cwd().joinpath('icon.svg'), Path.cwd())
